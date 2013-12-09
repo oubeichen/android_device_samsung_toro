@@ -14,7 +14,7 @@ persist.radio.imsregrequired=1
 persist.radio.imsallowmtsms=1
 
 # Default ecclist
-ro.ril.ecclist=112,911,#911,*911
+ro.ril.ecclist=110,120,119,#110,*110
 
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
