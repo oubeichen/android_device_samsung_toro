@@ -37,14 +37,8 @@ BOARD_INVENSENSE_APPLY_COMPASS_NOISE_FILTER := true
 
 USE_LINARO_COMPILER_FLAGS=yes
 
-TARGET_GLOBAL_CFLAGS += $(call-cc-option,-march=armv7-a) \
-$(call-cc-option,-mcpu=cortex-a9) \
-$(call-cc-option,-mtune=cortex-a9) \
-$(call-cc-option,-mfpu=neon)
+TARGET_GLOBAL_CFLAGS += -march=armv7-a -mcpu=cortex-a9 -mtune=cortex-a9 -mfpu=neon
 
-TARGET_GLOBAL_CPPFLAGS += $(call-cpp-option,-march=armv7-a) \
-$(call-cpp-option,-mcpu=cortex-a9) \
-$(call-cpp-option,-mtune=cortex-a9) \
-$(call-cpp-option,-mfpu=neon)
+TARGET_GLOBAL_CPPFLAGS += -march=armv7-a -mcpu=cortex-a9 -mtune=cortex-a9 -mfpu=neon
 
 USE_ALL_OPTIMIZED_STRING_FUNCS := true
