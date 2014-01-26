@@ -20,6 +20,8 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
 
+TARGET_KERNEL_CUSTOM_TOOLCHAIN=arm-unknown-linux-gnueabi-4.7
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
 
