@@ -38,3 +38,7 @@ BOARD_INVENSENSE_APPLY_COMPASS_NOISE_FILTER := true
 USE_LINARO_COMPILER_FLAGS=yes
 
 USE_ALL_OPTIMIZED_STRING_FUNCS := true
+
+BRIGHTNESS_SYS_FILE := "/sys/class/backlight/s6e8aa0/brightness"
+
+TARGET_RECOVERY_INITRC := device/samsung/toro/rootdir/init.philz-samsung.rc

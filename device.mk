@@ -25,5 +25,8 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN=arm-unknown-linux-gnueabi-4.7
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
 
+PRODUCT_COPY_FILES += \
+    device/samsung/toro/rootdir/extra.fstab:recovery/root/etc/extra.fstab
+
 $(call inherit-product, device/samsung/tuna/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/toro/toro-vendor.mk)
